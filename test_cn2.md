@@ -1,6 +1,3 @@
----
-title: "Computernetwerken II"
----
 #Samenvatting Netwerken 2
 [Terug naar overzicht](./README.md)
 ##Commandos
