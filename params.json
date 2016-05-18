@@ -1,6 +1,6 @@
 {
   "name": "Samenvattingen",
   "tagline": "Samenvattingen in Markdown.",
-  "body": "#Samenvatting\r\n##Overzicht\r\n1. [Computernetwerken II](./test_cn2.md)\r\n",
+  "body": "#Samenvatting\r\n##Overzicht\r\n1. [Computernetwerken II](test_cn2.md)\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
