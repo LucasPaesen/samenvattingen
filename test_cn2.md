@@ -1,7 +1,7 @@
 #Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
 ##Commandos
-###Initiële configuratie
+###Initiële configuratie van switch / router
 | Omschrijving | Commando |
 | --- | --- |
 |	Set hostname	|	hostname Router	|
