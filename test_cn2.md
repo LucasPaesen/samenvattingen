@@ -81,6 +81,8 @@
 ###Opgave
 Een onderneming wenst een hiërarchische IP adressering te implementeren.   
 Gegeven is het aantal hosts per departement (LAN) en enkele seriële verbindingen. Gebruik VLSM om het netwerk efficiënt onder te verdelen in hiërarchische subnetten. Het nulde subnet is hier bruikbaar!  
+
+Starting IP: 172.16.0.0
  
 Departement Administratie: 20 hosts  
 Departement Directie: 10 hosts  
