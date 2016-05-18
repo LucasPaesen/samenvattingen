@@ -1,7 +1,7 @@
 #Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
 ##Commandos
-###Basis configuratie
+###Initiële configuratie
 | Omschrijving | Commando |
 | --- | --- |
 |	Set hostname	|	hostname Router	|
@@ -13,10 +13,11 @@
 | Configure an enable password | enable password cisco |
 | Set a password for telnet lines | password cisco |
 | Specify the lines | line vty 0 15 |
+| Enable password encryption | service password-encryption |
 
+##Basis configuratie commando's
 | Omschrijving | Commando |
 | --- | --- |
-| Enable password encryption | service password-encryption |
 |	Enter interface configuration mode for SVI	|	interface vlan99	|
 |	Configure the management interface IP	|	ip addr 172.17.99.1	|
 |	Configure default gateway |	ip default-gateway 172.17.99.1 |
