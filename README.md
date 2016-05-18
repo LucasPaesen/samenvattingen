@@ -1,6 +1,6 @@
 ---
 title: Samenvattingen
-description: Samenvattingen in Markdown.
+description: Samenvattingen in Markdown
 ---
 
 #Samenvatting
