@@ -66,7 +66,7 @@
 |	Enter interface configuration mode	|	interface f0/1	|
 |	Force the link to be a trunk link	|	switchport mode trunk	|
 |	Specify a native VLAN for untagged 802.1Q trunks	|	switchport trunk native vlan	|
-|	Specify the list of VLANs to be allowed on the trunk link	|	switchport trunk allowed vlan	|
+|	Specify the list of VLANs to be allowed on the trunk link	|	switchport trunk allowed vlan 10,20,30,99	|
 |	Return to the privileged EXEC mode	|	end	|
 
 ##VLSM Voorbeeld
