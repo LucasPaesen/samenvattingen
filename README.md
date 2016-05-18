@@ -1,3 +1,3 @@
 #Samenvatting
 ##Overzicht
-1. [Computernetwerken II](netwerken/test_cn2.md)
+1. [Computernetwerken II](netwerken/cn2.md)
