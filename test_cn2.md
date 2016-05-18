@@ -9,6 +9,8 @@
 |	Remove the motd	|	no motd	|
 |	Enter basic configuration mode	|	enable	|
 |	Enter global configuration mode	|	conf t	|
+| Set secret | enable secret class |
+| Set password | enable password cisco |
 |	Enter interface configuration mode for SVI	|	interface vlan99	|
 |	Configure the management interface IP	|	ip addr 172.17.99.1	|
 |	Configure default gateway |	ip default-gateway 172.17.99.1 |
