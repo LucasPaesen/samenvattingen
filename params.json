@@ -1,6 +1,6 @@
 {
   "name": "Samenvattingen",
   "tagline": "Samenvattingen in Markdown.",
-  "body": "#Samenvatting\r\n##Overzicht\r\n1. <a href=\"https://github.com/segersniels/samenvattingen/blob/master/netwerken/cn2.md\">Computernetwerken II</a>\r\n",
+  "body": "---\r\ntitle: Samenvattingen\r\ndescription: Samenvattingen in Markdown.\r\n---\r\n\r\n#Samenvatting\r\n##Overzicht\r\n1. [Computernetwerken II](test_cn2.md)\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
