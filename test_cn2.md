@@ -10,7 +10,12 @@
 |	Enter basic configuration mode	|	enable	|
 |	Enter global configuration mode	|	conf t	|
 | Set secret | enable secret class |
-| Set password | enable password cisco |
+| Configure an enable password | enable password cisco |
+| Set a password for telnet lines | password cisco |
+| Specify the lines | line vty 0 15 |
+
+| Omschrijving | Commando |
+| --- | --- |
 | Enable password encryption | service password-encryption |
 |	Enter interface configuration mode for SVI	|	interface vlan99	|
 |	Configure the management interface IP	|	ip addr 172.17.99.1	|
