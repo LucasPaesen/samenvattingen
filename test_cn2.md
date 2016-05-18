@@ -1,4 +1,4 @@
-#Samenvatting Netwerken 2
+#Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
 ##Commandos
 ###Basis configuratie
