@@ -65,9 +65,17 @@
 |	Enter global configuration mode	|	configure terminal	|
 |	Enter interface configuration mode	|	interface f0/1	|
 |	Force the link to be a trunk link	|	switchport mode trunk	|
-|	Specify a native VLAN for untagged 802.1Q trunks	|	switchport trunk native vlan	|
+|	Specify a native VLAN for untagged 802.1Q trunks	|	switchport trunk native vlan 99	|
 |	Specify the list of VLANs to be allowed on the trunk link	|	switchport trunk allowed vlan 10,20,30,99	|
 |	Return to the privileged EXEC mode	|	end	|
+
+###Routing
+| Omschrijving | Commando |
+| --- | --- |
+| Show the current routes | show ip route |
+| Set a static route | ip route 'target ip' 'target subnetmask' 'port it goes through' |
+
+`ip route 172.16.0.0 255.248.0.0 s0/0/0`
 
 ##VLSM Voorbeeld
 ###Opgave
