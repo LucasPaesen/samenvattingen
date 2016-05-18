@@ -109,7 +109,7 @@ In het geval van personeel is dit 9. ->  **32-9 = 23**
 4. Netwerkadres: In dit geval gegeven. Maar anders broadcast van vorige subnet + 1     
 **172.16.0.0**
 5. Range: VAN: Netwerkadres +1 TOT: Aantal hosts - 1 bereikt (Laatste host is voor broadcast)
-**172.16.0.1 + (510 - 1 hosts) = 172.16.1.254**
-**172.16.0.1 (509) -> 172.16.0.255 (509-254=255) -> 172.16.1.0 (255-1=254)-> 172.16.1.254 (0)**
+**172.16.0.1 + (510 - 1 hosts) = 172.16.1.254**  
+**172.16.0.1 (509 hosts beschikbaar ter verdeling) -> 172.16.0.255 (509-254=255) -> 172.16.1.0 (255-1=254)-> 172.16.1.254 (0)**
 6. Broadcast: Laatste adres van de range + 1 
 **172.16.1.254 + 1 = 172.16.1.255**
