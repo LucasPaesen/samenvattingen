@@ -118,8 +118,22 @@ In het geval van personeel is dit 9. ->  **32-9 = 23 -> /23**
 **255.255.254.0**
 4. Netwerkadres: Broadcast van vorige subnet + 1. In dit geval starten we vanaf het begin.  
 **172.16.0.0**
-5. Broadcast bepalen: aantal hosts - 1  
-**512-1=511 -> 172.16.0.0 -> 172.16.0.255 (0 naar 255 = 256 hosts in gebruik) -> 172.16.1.255**
+5. Broadcast bepalen:
+**172.16.0.0 -> 172.16.0.255 (0 naar 255 = 256 hosts in gebruik) -> 172.16.1.255**
 6. Range: 
  1. Eerste adres is het subnet adres +1: **172.16.0.1**
  2. Laatste adres is het broadcast adres -1: **172.16.1.254**
+
+####Administratie voorbeeld
+1. hosts: Minimaal 20 hosts -> 2^6 = 32 hosts 
+2. CIDR: 32b – het aantal bits  genomen voor de hosts te bepalen. 
+In het geval van personeel is dit 9. ->  **32-5 = 27 -> /27**
+3. Subnetmask: Opsplitsen volgens CIDR -> 26b & 6b -> 11111111.11111111.11111111.11100000 -> 
+**255.255.255.224**
+4. Netwerkadres: Broadcast van vorige subnet + 1.
+**172.16.2.0**
+5. Broadcast bepalen: netwerkadres + benodigde hosts
+**172.16.2.0 -> 172.16.2.31**
+6. Range: 
+ 1. Eerste adres is het subnet adres +1: **172.16.2.1**
+ 2. Laatste adres is het broadcast adres -1: **172.16.2.30**
