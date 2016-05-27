@@ -112,15 +112,14 @@ Departement Personeel: 500 hosts
 ###Werkwijze
 ####Personeel voorbeeld
 1. hosts: Minimaal 500 hosts -> 2^8? = 256 Niet genoeg -> 2^9 = 512 Genoeg! 
-MAAR hier 2 van aftrekken voor netwerk en broadcast -> **510**
 2. CIDR: 32b – het aantal bits  genomen voor de hosts te bepalen. 
 In het geval van personeel is dit 9. ->  **32-9 = 23**
 3. Subnetmask: Opsplitsen volgens CIDR -> 23b & 9b -> 11111111.11111111.11111110.00000000 -> 
 **255.255.254.0**
-4. Netwerkadres: In dit geval gegeven. Maar anders broadcast van vorige subnet + 1     
+4. Netwerkadres: Bbroadcast van vorige subnet + 1     
 **172.16.0.0**
-5. Range: VAN: Netwerkadres +1 TOT: Aantal hosts - 1 bereikt (Laatste host is voor broadcast)
-**172.16.0.1 + (510 - 1 hosts) = 172.16.1.254**  
-*172.16.0.1 (509 hosts beschikbaar ter verdeling) -> 172.16.0.255 (509-254=255 nog te verdelen) -> 172.16.1.0 (255-1=254 nog te verdelen)-> 172.16.1.254 (0)*
-6. Broadcast: Laatste adres van de range + 1 
-**172.16.1.254 + 1 = 172.16.1.255**
+5. Broadcast bepalen: aantal hosts - 1
+**512-1=511 -> 172.16.0.0 -> 172.16.0.255 (0 naar 255 = 256 hosts in gebruik) -> 172.16.1.255**
+6. Range: 
+ 1. Eerste adres is het subnet adres +1: **172.16.0.1**
+ 2. Laatste adres is het broadcast adres -1: **172.16.1.254**
