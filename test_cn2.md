@@ -113,10 +113,10 @@ Departement Personeel: 500 hosts
 ####Personeel voorbeeld
 1. hosts: Minimaal 500 hosts -> 2^8? = 256 Niet genoeg -> 2^9 = 512 Genoeg! 
 2. CIDR: 32b – het aantal bits  genomen voor de hosts te bepalen. 
-In het geval van personeel is dit 9. ->  **32-9 = 23**
+In het geval van personeel is dit 9. ->  **32-9 = 23 -> /23**
 3. Subnetmask: Opsplitsen volgens CIDR -> 23b & 9b -> 11111111.11111111.11111110.00000000 -> 
 **255.255.254.0**
-4. Netwerkadres: Broadcast van vorige subnet + 1  
+4. Netwerkadres: Broadcast van vorige subnet + 1. In dit geval starten we vanaf het begin.  
 **172.16.0.0**
 5. Broadcast bepalen: aantal hosts - 1  
 **512-1=511 -> 172.16.0.0 -> 172.16.0.255 (0 naar 255 = 256 hosts in gebruik) -> 172.16.1.255**
