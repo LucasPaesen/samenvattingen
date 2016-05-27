@@ -116,9 +116,9 @@ Departement Personeel: 500 hosts
 In het geval van personeel is dit 9. ->  **32-9 = 23**
 3. Subnetmask: Opsplitsen volgens CIDR -> 23b & 9b -> 11111111.11111111.11111110.00000000 -> 
 **255.255.254.0**
-4. Netwerkadres: Bbroadcast van vorige subnet + 1     
+4. Netwerkadres: Broadcast van vorige subnet + 1  
 **172.16.0.0**
-5. Broadcast bepalen: aantal hosts - 1
+5. Broadcast bepalen: aantal hosts - 1  
 **512-1=511 -> 172.16.0.0 -> 172.16.0.255 (0 naar 255 = 256 hosts in gebruik) -> 172.16.1.255**
 6. Range: 
  1. Eerste adres is het subnet adres +1: **172.16.0.1**
