@@ -1,23 +1,239 @@
 #Samenvatting Computernetwerken 2
-[Terug naar overzicht](./README.md)
+[**Terug naar samenvattingen**](./README.md)
+
+**Overzicht van de hoofdstukken:**  
+
+1. [Theorie](#theorie)  
+ 1. [Hoofdstuk 1](#hoofdstuk-1)  
+ 2. [Hoofdstuk 2](#hoofdstuk-2)  
+ 3. [Hoofdstuk 3](#hoofdstuk-3)  
+ 4. [Hoofdstuk 4](#hoofdstuk-4)  
+ 5. [Hoofdstuk 5](#hoofdstuk-5)  
+ 6. [Hoofdstuk 6](#hoofdstuk-6)
+2. [Afkortingen](#afkortingen)  
+3. [Commandos](#commandos)  
+4. [VLSM](#vlsm-voorbeeld)
+
+**Zaken zeker naar te kijken:**  
+poortnummers, tcp/udp, subnetting, switching technieken, ipv6, bootproces, dhcp en routing technieken & protocollen.
+
 ##Theorie
-**(ARP) Store-and-forward switching**: is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is. 
+###Hoofdstuk 1
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
-**(ARP) Cut-through**:
+**(ARP) Store-and-forward switching**:  
+Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
 
-1. Fast-forward switching: Laagste niveau van latentie stuurt onmiddellijk een pakket na het lezen van het bestemmingsadres, typische  ut-through methode voor het switchen. 
-2. Fragment-free switching: De switch slaat de eerste 64 bytes van het frame op voor forwarding, de meeste netwerkfouten en botsingen treden tijdens de eerste 64 bytes op.
+**(ARP) Cut-through**:  
+Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het destination address wordt gelezen.
 
 **Gelaagd model**:  
-![model](https://gyazo.com/d30d7107c1e3545753df4cbfd5866e56)  
+
+![model](img/model.png)  
+
 **TCP/IP Protocol Suite en communicatie**:   
-![tcp/ip](https://gyazo.com/71d1c0eb939f4ed98b36b7bf760ab5e1)  
+
+![tcp/ip](img/protocol.png)  
+
 **Encapsulation:**  
-![encaps](https://gyazo.com/4a235de5d871efd9d7df133a2993ff99)  
 
+![encaps](img/encaps.png)  
 
+**Converged Network:**  
+VoIP, video support, video conferencing, call control, voice messaging, etc. Multiple types of traffic only one network to manage.
+
+**Borderless switched network:**  
+ A network architecture that allows organizations to connect anyone, anywhere, anytime, and on any device securely, reliably, and seamlessly.
+ 
+ **Steps of building the MAC address table to forward frames:**
+ 
+ 1. The switch receives a frame from PC 1 on Port 1. 
+ 2. The switch examines the source MAC address and compares it to MAC address table. If the address is not in the MAC address table, it associates the source MAC address of PC 1 with the ingress port (Port 1) in the MAC address table. If the MAC address table already has an entry for that source address, it resets the aging timer. An entry for a MAC address is typically kept for five minutes. 
+ 3. After the switch has recorded the source address information, the switch examines the destination MAC address. If the destination address is not in the MAC table or if it’s a broadcast MAC address, as indicated by all Fs, the switch floods the frame to all ports, except the ingress port. 
+ 4. The destination device replies to the frame with a unicast frame addressed to PC 1. 
+ 5. The switch enters the source MAC address of PC 3 and the port number of the ingress port into the address table. The destination address of the frame and its associated egress port is found in the MAC address table . 
+ 6. The switch can now forward frames between these source and destination devices without flooding, because it has entries in the address table that identify the associated ports .
+
+**Alleviating network congestion:**  
+
+1. Facilitating the segmentation of a LAN into separate collision domains
+2. Providing full-duplex communication between devices
+3. Taking advantage of their high-port density
+4. Buffering large frames
+5. Employing high-speed ports
+5. Taking advantage of their fast internal switching process
+6. Having a low, per-port cost
+
+###Hoofdstuk 2
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**Boot sequence switch:**
+
+1. Power-on self test (POST) -> CPU, DRAM, flash 
+2. Run boot loader software. 
+3. Boot loader performs low-level CPU initialization. 
+4. Boot loader initializes the flash file system 
+5. Boot loader locates and loads a default IOS operating system software image into memory and passes control of the switch over to the IOS.
+6. Attempts to automatically boot by using information in the BOOT environment variable. 
+7. If this variable is not set, the switch performs a top-to-bottom search through the flash file system. It loads and executes the first executable file, if it can. 
+8. The IOS software then initializes the interfaces using the Cisco IOS commands found in the configuration file and startup configuration, which is stored in NVRAM. 
+
+**SSH Operation:**  
+
+1. Secure Shell (SSH) is a protocol that provides a secure (encrypted), command-line based connection to a remote device. 
+2. SSH is commonly used in UNIX-based systems. 
+3. The Cisco IOS software also supports SSH. 
+4. A version of the IOS software, including cryptographic (encrypted) features and capabilities, is required to enable SSH on Catalyst 2960 switches. 
+5. Because its strong encryption features, SSH should replace Telnet for management connections. 
+6. SSH uses TCP port 22, by default. Telnet uses TCP port 23.
+
+**DHCP spoofing:**  
+A fake DHCP server is placed in the network to issue dhcp addresses to clients.
+
+**DHCP starvation:**  
+Is often used before a DHCP spoofing attack to deny service to the legitimate DHCP server.
+
+**DHCP snooping:**  
+Specifies which switch ports van respond to DHCP requests. Example:
+```
+ip dhcp snooping  
+ip dhcp snooping vlan 10,20  
+interface fa0/1  
+ip dhcp snoopîng trust  
+interface fa0/2  
+ip dhcp limit rate 5
+```
+
+**NTP network time protocol:**  
+Is used to synchronize the clock of computer systems data networks. It can get the correct time from an internal or external time source.
+
+###Hoofdstuk 3
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**VLAN's:**  
+1. A vlan is a logical partition of a layer 2 network.
+2. Each vlan is a broadcast domain, usually with its own IP network.
+3. VLANs are mutually isolated and packets can only pass between them via a router.
+4. Usually the partitioning of a layer 2 network takes place in a switch.
+5. Are based on logical connections.
+
+**Benefits of vlan:**  
+Security, cost reduction, better performance, shrink broadcast domains, improved IT staff efficiency, simpler project and application management.
+
+**Frame tagging:**  
+Process of adding a VLAN identification header to the frame.
+
+**VLAN range:**  
+Normale range: 1-1005 / stored in vlan.dat
+Extended range: 1006 - 4096 / stored in NVRAM
+
+**Removing a VLAN:**  
+Before deleting a VLAN, be sure to first reassign all member ports to a different VLAN.
+
+###Hoofdstuk 4
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**Routing:**  
+
+1. Routers use static routes and dynamic routing protocols to learn about remote networks and build their routing tables.
+2. Routers use routing tables to determine the best path to send packets.
+3. Routers encaptulate the packet and forwards it to the interface indicated in the routing table.
+
+**Packet forwarding methods:**
+
+1. Process switching -> an older packet forwarding mechanism still available for Cisco routers.
+2. Fast switching -> a common packet forwarding mechanism which uses a fast-switching cache to store next hop information.
+3. Cisco express forwarding -> the most recent, fastest and preferred cisco ios packet-forwarding mechanism. Table entries are not packet-triggered like fast switching but change-triggered
+
+**Process switching:**  
+When a packet arrives on an interface, it is forwarded to the control plane where the CPU matches the destination address with an entry in its routing table, and then determines the exit interface and forwards the packet. It is important to understand that the router does this for every packet, even if the destination is the same for a stream of packets.
+
+**Fast switching:**  
+When a packet arrives on an interface, it is forwarded to the control plane where the CPU searches for a match in the fastswitching cache. If it is not there, it is process-switched and forwarded to the exit interface. The flow information for the packet is also stored in the fastswitching cache. If another packet going to the same destination arrives on an interface, the next-hop information in the cache is reused without CPU intervention. 
+
+**Cisco express forwarding:**  
+Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers.
+
+###Hoofdstuk 5
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**Inter-VLAN routing:**  
+Layer 2 switches cannot forward traffic between VLANs without the assistance of a router. Inter-VLAN routing is a process for forwarding network traffic from one VLAN to another, using a router.
+
+**Multilayer switches:**  
+Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the need for dedicated routers. They support dynamic routing and inter-VLAN routing. 
+
+###Hoofdstuk 6
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**Voordelen van static routing:**  
+
+2. Static routes are not advertised over the network, resulting in better security.
+3. Static routes use less bandwidth than dynamic routing protocols, no CPU cycles are used to calculate and communicate routes.
+4. The path a static route uses to send data is known.
+
+**Nadelen van static routing:**  
+
+1. Initial configuration and maintenance is time-consuming. 
+2. Configuration is error-prone, especially in large networks. 
+3. Administrator intervention is required to maintain changing route information. 
+4. Does not scale well with growing networks; maintenance becomes cumbersome. 
+5. Requires complete knowledge of the whole network for proper implementation
+
+**Wanneer static routes gebruiken?**  
+
+1. Providing ease of routing table maintenance in smaller networks that are not expected to grow significantly.
+2. Routing to and from stub networks. A stub network is a network accessed by a single route, and the router has no other neighbors.
+3. Using a single default route to represent a path to any network that does not have a more specific match with another route in the routing table. Default routes are used to send traffic to any destination beyond the next upstream router.
+
+**Often uses of static routing:**  
+
+1. Connect to a specific network. 
+2. Provide a Gateway of Last Resort for a stub network. 
+3. Reduce the number of routes advertised by summarizing several contiguous networks as one static route. 
+4. Create a backup route in case a primary route link fails
+
+**Default static route:**  
+is a route that matches all packets. A default static route is simply a static route with 0.0.0.0/0 as the destination ipv4 address.
+
+**Floating static route:**  
+
+ 1. Floating static routes are static routes that are used to provide a backup path to a primary static or dynamic route, in the event of a link failure. 
+ 2. The floating static route is only used when the primary route is not available. 
+ 3. To accomplish this, the floating static route is configured with a higher administrative distance than the primary route. 
+
+###Afkortingen
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+Alle afkortingen: [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
+
+####Belangrijkste afkortingen
+| Afkorting | Betekenis |
+| :---: | --- |
+| CAM | Content addressable memory |
+| CRC | Cyclic redundancy check |
+| FCS | Frame-check-sequence |
+| POST | Power-on self-test |
+| SSH | Secure shell |
+| DoS | Denial-of-Service |
+| DNS | Domain Name Server |
+| NTP | Network time protocol |
+| VLAN | Virtual local area network |
+| DTP | Dynamic trunking protocol |
+| CPU | Central processing unit |
+| RAM | Random access memory |
+| ROM | Read-only memory |
+| OSPF | Open shortest path first |
+| EIGRP | Enhanced interior gateway routing protocol |
+| CIDR | Classless inter-domain routing |
+| VLSM | Variable-length subnet masking |
+| FLSM | Fixed-length subnet masking |
+| IMAP | Internet message access protocol |
+| SMTP | Simple mail transfer protocol |
 
 ##Commandos
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 ###Initiële configuratie van switch / router
 | Omschrijving | Commando |
 | --- | --- |
@@ -30,6 +246,8 @@
 | Configure an enable password | enable password cisco |
 | Set a password for telnet lines | password cisco |
 | Specify the lines | line vty 0 15 |
+| Set ssh | transport input ssh |
+| Set ssh | login local |
 | Enable password encryption | service password-encryption |
 
 ##Basis configuratie commando's
@@ -106,6 +324,8 @@
 `ip route 172.16.0.0 255.248.0.0 s0/0/0`
 
 ##VLSM Voorbeeld
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 ###Opgave
 Een onderneming wenst een hiërarchische IP adressering te implementeren.   
 Gegeven is het aantal hosts per departement (LAN) en enkele seriële verbindingen. Gebruik VLSM om het netwerk efficiënt onder te verdelen in hiërarchische subnetten. Het nulde subnet is hier bruikbaar!  
