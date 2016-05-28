@@ -415,7 +415,7 @@ In het geval van personeel is dit 9. ->  **32-9 = 23 -> /23**
 4. Netwerkadres: Broadcast van vorige subnet + 1. In dit geval starten we vanaf het begin.  
 **172.16.0.0**
 5. Broadcast bepalen:
-**172.16.0.0 -> 172.16.0.255 (0 naar 255 = 256 hosts in gebruik) -> 172.16.1.255**
+**172.16.0.0 -> 172.16.0.255 (0 naar 255 = 256) -> 172.16.1.255**
 6. Range: 
  1. Eerste adres is het subnet adres +1: **172.16.0.1**
  2. Laatste adres is het broadcast adres -1: **172.16.1.254**
