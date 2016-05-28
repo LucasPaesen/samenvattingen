@@ -407,7 +407,7 @@ Departement Personeel: 500 hosts
 
 ###Werkwijze
 ####Personeel voorbeeld
-1. hosts: Minimaal 500 hosts -> 2^8? = 256 Niet genoeg -> 2^9 = 512 Genoeg! 
+1. hosts: Minimaal 500 hosts -> 2^8? = 256 Niet genoeg -> 2^9 = **512 hosts** 
 2. CIDR: 32b – het aantal bits  genomen voor de hosts te bepalen. 
 In het geval van personeel is dit 9. ->  **32-9 = 23 -> /23**
 3. Subnetmask: Opsplitsen volgens CIDR -> 23b & 9b -> 11111111.11111111.11111110.00000000 -> 
@@ -421,7 +421,7 @@ In het geval van personeel is dit 9. ->  **32-9 = 23 -> /23**
  2. Laatste adres is het broadcast adres -1: **172.16.1.254**
 
 ####Administratie voorbeeld
-1. hosts: Minimaal 20 hosts -> 2^5 = 32 hosts 
+1. hosts: Minimaal 20 hosts -> 2^5 = **32 hosts**
 2. CIDR: 32b – het aantal bits  genomen voor de hosts te bepalen. 
 In het geval van personeel is dit 9. ->  **32-5 = 27 -> /27**
 3. Subnetmask: Opsplitsen volgens CIDR -> 27b & 5b -> 11111111.11111111.11111111.11100000 -> 
@@ -435,7 +435,7 @@ In het geval van personeel is dit 9. ->  **32-5 = 27 -> /27**
  2. Laatste adres is het broadcast adres -1: **172.16.2.30**
 
 ####Directie voorbeeld
-1. hosts: 10 hosts nodig, dus 2^4 = 16 hosts
+1. hosts: 10 hosts nodig, dus 2^4 = **16 hosts**
 2. CIDR:  **32 - 4 -> /28**
 3. Subnetmask: **255.255.255.240**
 4. Netwerkadres:  **172.16.2.32**
