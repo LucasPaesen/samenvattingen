@@ -261,6 +261,7 @@ is a route that matches all packets. A default static route is simply a static r
 Weten wat elk onderdeel is, zoals de beginletters (O, I, R, etc).  
 
 In volgorde vinden we:  
+
 1. Type route
 2. Netwerk (subnet) van de route die ingesteld staat
 3. [Administrative Distance / Metric]
