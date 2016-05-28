@@ -203,6 +203,12 @@ A type of router configuration in which a single physical interface routes traff
 
 ![stick](img/stick.png)
 
+```
+interface f0/1.10
+encapsulation dot1q 10
+end
+```
+
 **Multilayer switches:**  
 Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the need for dedicated routers. They support dynamic routing and inter-VLAN routing.
 
