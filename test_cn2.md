@@ -17,7 +17,13 @@
 **Encapsulation:**  
 ![encaps](img/encaps.png)  
 
+**Converged Network:**  
+VoIP, video support, video conferencing, call control, voice messaging, etc. Multiple types of traffic only one network to manage.
 
+**Borderless switched network:**  
+ A network architecture that allows organizations to connect anyone, anywhere, anytime, and on any device securely, reliably, and seamlessly.
+ 
+ 
 
 ##Commandos
 ###Initiële configuratie van switch / router
