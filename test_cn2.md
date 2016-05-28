@@ -1,5 +1,5 @@
 #Samenvatting Computernetwerken 2
-[**Terug naar overzicht samenvattingen**](./README.md)
+[**Terug naar samenvattingen**](./README.md)
 
 **Overzicht van de hoofdstukken:**  
 
