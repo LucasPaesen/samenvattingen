@@ -433,3 +433,13 @@ In het geval van personeel is dit 9. ->  **32-5 = 27 -> /27**
 6. Range: 
  1. Eerste adres is het subnet adres +1: **172.16.2.1**
  2. Laatste adres is het broadcast adres -1: **172.16.2.30**
+
+####Directie voorbeeld
+1. hosts: 10 hosts nodig, dus 2^4 = 16 hosts
+2. CIDR:  **32 - 4 -> /28**
+3. Subnetmask: **255.255.255.240**
+4. Netwerkadres:  **172.16.2.32**
+5. Broadcast bepalen:  **172.16.2.47**
+6. Range: 
+ 1. Eerste adres: **172.16.2.33**
+ 2. Laatste adres: **172.16.2.46**
