@@ -27,7 +27,7 @@ Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde 
 **(ARP) Cut-through**:  
 Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het destination address wordt gelezen.
 
-**Gelaagd model**:  
+**Gelaagd model (APSTNDP)**:  
 
 ![model](img/model.png)  
 
@@ -38,12 +38,26 @@ Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het desti
 **Encapsulation:**  
 
 ![encaps](img/encaps.png)  
+![encaps](img/enc.png)  
 
 **Converged Network:**  
 VoIP, video support, video conferencing, call control, voice messaging, etc. Multiple types of traffic only one network to manage.
 
 **Borderless switched network:**  
  A network architecture that allows organizations to connect anyone, anywhere, anytime, and on any device securely, reliably, and seamlessly.
+ 
+**Access, Distribution and Core layers:**  
+*Access Layer:*  
+The access layer represents the network edge, where traffic enters or exits the campus network. Traditionally, the primary function of an access layer switch is to provide network access to the user.
+
+*Distribution Layer:*  
+
+1. Providing intelligent switching, routing, and network access policy functions to access the rest of the network
+2. Providing high availability through redundant distribution layer switches to the end-user and equal cost paths to the core
+3. Providing differentiated services to various classes of service applications at the edge of the network 
+
+*Core Layer:*  
+The core layer is the network backbone. It connects several layers of the campus network. The core layer serves as the aggregator for all of the other campus blocks and ties the campus together with the rest of the network. The primary purpose of the core layer is to provide fault isolation and highspeed backbone connectivity. 
  
  **Steps of building the MAC address table to forward frames:**
  
@@ -78,6 +92,15 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 7. If this variable is not set, the switch performs a top-to-bottom search through the flash file system. It loads and executes the first executable file, if it can. 
 8. The IOS software then initializes the interfaces using the Cisco IOS commands found in the configuration file and startup configuration, which is stored in NVRAM. 
 
+**Recovering from a system crash:**  
+
+1. Connect a PC by console cable to the switch console port. Configure terminal emulation software to connect to the switch. 
+2. Unplug the switch power cord. 
+3. Reconnect the power cord to the switch and, within 15 seconds, press and hold down the Mode button while the System LED is still flashing green. 
+4. Continue pressing the Mode button until the System LED turns briefly amber and then solid green; then release the Mode button. 
+5. The boot loader switch: prompt appears in the terminal emulation software on the PC. 
+The boot loader command line supports commands to format the flash file system, reinstall the operating system software, and recover from a lost or forgotten password. For example, the dir command can be used to view a list of files within a specified directory as shown in the figure. 
+
 **SSH Operation:**  
 
 1. Secure Shell (SSH) is a protocol that provides a secure (encrypted), command-line based connection to a remote device. 
@@ -86,6 +109,9 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 4. A version of the IOS software, including cryptographic (encrypted) features and capabilities, is required to enable SSH on Catalyst 2960 switches. 
 5. Because its strong encryption features, SSH should replace Telnet for management connections. 
 6. SSH uses TCP port 22, by default. Telnet uses TCP port 23.
+
+**MAC address flooding:**  
+An attacker could exploit this behavior to gain access to traffic normally controlled by the switch by using a PC to run a MAC flooding tool. Such tool is a program created to generate and send out frames with bogus source MAC addresses to the switch port. 
 
 **DHCP spoofing:**  
 A fake DHCP server is placed in the network to issue dhcp addresses to clients.
@@ -111,6 +137,7 @@ Is used to synchronize the clock of computer systems data networks. It can get t
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
 **VLAN's:**  
+
 1. A vlan is a logical partition of a layer 2 network.
 2. Each vlan is a broadcast domain, usually with its own IP network.
 3. VLANs are mutually isolated and packets can only pass between them via a router.
@@ -133,6 +160,11 @@ Before deleting a VLAN, be sure to first reassign all member ports to a differen
 ###Hoofdstuk 4
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
+**Storing:**
+
+1. Electromagnetic interference (EMI) or radio frequency interference (RFI): Storing door radio golven en elektromagnetische apparaten zoals elektrische motoren.
+2. Crosstalk: Storing door nabijgelegen kabels.
+
 **Routing:**  
 
 1. Routers use static routes and dynamic routing protocols to learn about remote networks and build their routing tables.
@@ -153,6 +185,12 @@ When a packet arrives on an interface, it is forwarded to the control plane wher
 
 **Cisco express forwarding:**  
 Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers.
+
+**IPV6:**  
+link-local: 2001:0DB8:ACAD:0001:/64  
+multicast: FF00::/8  
+link-local unicast: FE80::/10  
+site local unicast: FEC0::/10  
 
 ###Hoofdstuk 5
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
