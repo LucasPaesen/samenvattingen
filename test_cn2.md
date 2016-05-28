@@ -69,8 +69,21 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 **DHCP spoofing:**  
 A fake DHCP server is placed in the network to issue dhcp addresses to clients.
 
-**DHCP starvation:**
+**DHCP starvation:**  
 Is often used before a DHCP spoofing attack to deny service to the legitimate DHCP server.
+
+**DHCP snooping:**  
+Specifies which switch ports van respond to DHCP requests.
+```
+ip dhcp snooping  
+ip dhcp snooping vlan 10,20  
+interface fa0/1  
+ip dhcp snoopîng trust  
+interface fa0/2  
+ip dhcp limit rate 5
+```
+
+
 
 ##Commandos
 ###Initiële configuratie van switch / router
