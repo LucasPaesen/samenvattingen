@@ -1,5 +1,13 @@
 #Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
+
+[Hoofdstuk 1](###Hoofdstuk 1)
+[Hoofdstuk 2](###Hoofdstuk 2)
+[Hoofdstuk 3](###Hoofdstuk 3)
+[Hoofdstuk 4](###Hoofdstuk 4)
+[Hoofdstuk 5](###Hoofdstuk 5)
+[Hoofdstuk 6](###Hoofdstuk 6)
+
 ##Theorie
 ###Hoofdstuk 1
 **(ARP) Store-and-forward switching**:  
