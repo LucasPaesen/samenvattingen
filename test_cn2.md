@@ -1,5 +1,5 @@
 #Samenvatting Computernetwerken 2
-**Links naar hoofdstukken:**  
+**Overzicht hoofdstukken:**  
 [Hoofdstuk 1](#hoofdstuk-1)  
 [Hoofdstuk 2](#hoofdstuk-2)  
 [Hoofdstuk 3](#hoofdstuk-3)  
@@ -12,6 +12,8 @@
 
 ##Theorie
 ###Hoofdstuk 1
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 **(ARP) Store-and-forward switching**:  
 Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
 
@@ -56,6 +58,7 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 6. Having a low, per-port cost
 
 ###Hoofdstuk 2
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 **Boot sequence switch:**
 
 1. Power-on self test (POST) -> CPU, DRAM, flash 
@@ -97,6 +100,7 @@ ip dhcp limit rate 5
 Is used to synchronize the clock of computer systems data networks. It can get the correct time from an internal or external time source.
 
 ###Hoofdstuk 3
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 **VLAN's:**  
 1. A vlan is a logical partition of a layer 2 network.
 2. Each vlan is a broadcast domain, usually with its own IP network.
