@@ -8,12 +8,15 @@ Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde 
 Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het destination address wordt gelezen.
 
 **Gelaagd model**:  
+
 ![model](img/model.png)  
 
 **TCP/IP Protocol Suite en communicatie**:   
+
 ![tcp/ip](img/protocol.png)  
 
 **Encapsulation:**  
+
 ![encaps](img/encaps.png)  
 
 **Converged Network:**  
