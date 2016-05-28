@@ -1,12 +1,11 @@
 #Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
 ##Theorie
-**(ARP) Store-and-forward switching**: is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is. 
+**(ARP) Store-and-forward switching**:  
+Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
 
-**(ARP) Cut-through**:
-
-1. Fast-forward switching: Laagste niveau van latentie stuurt onmiddellijk een pakket na het lezen van het bestemmingsadres, typische  ut-through methode voor het switchen. 
-2. Fragment-free switching: De switch slaat de eerste 64 bytes van het frame op voor forwarding, de meeste netwerkfouten en botsingen treden tijdens de eerste 64 bytes op.
+**(ARP) Cut-through**:  
+Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het destination address wordt gelezen.
 
 **Gelaagd model**:  
 ![model](img/model.png)  
@@ -23,7 +22,7 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 **Borderless switched network:**  
  A network architecture that allows organizations to connect anyone, anywhere, anytime, and on any device securely, reliably, and seamlessly.
  
- **Steps of building the MAC address table:**
+ **Steps of building the MAC address table to forward frames:**
  
  1. The switch receives a frame from PC 1 on Port 1. 
  2. The switch examines the source MAC address and compares it to MAC address table. If the address is not in the MAC address table, it associates the source MAC address of PC 1 with the ingress port (Port 1) in the MAC address table. If the MAC address table already has an entry for that source address, it resets the aging timer. An entry for a MAC address is typically kept for five minutes. 
@@ -31,6 +30,18 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
  4. The destination device replies to the frame with a unicast frame addressed to PC 1. 
  5. The switch enters the source MAC address of PC 3 and the port number of the ingress port into the address table. The destination address of the frame and its associated egress port is found in the MAC address table . 
  6. The switch can now forward frames between these source and destination devices without flooding, because it has entries in the address table that identify the associated ports .
+
+**Alleviating network congestion:**  
+
+Switches help alleviating network congestion by: 
+1. Facilitating the segmentation of a LAN into separate collision domains
+2. Providing full-duplex communication between devices
+3. Taking advantage of their high-port density
+4. Buffering large frames
+5. Employing high-speed ports
+5. Taking advantage of their fast internal switching process
+6. Having a low, per-port cost
+
 
 ##Commandos
 ###Initiële configuratie van switch / router
