@@ -137,6 +137,7 @@ Is used to synchronize the clock of computer systems data networks. It can get t
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
 **VLAN's:**  
+
 1. A vlan is a logical partition of a layer 2 network.
 2. Each vlan is a broadcast domain, usually with its own IP network.
 3. VLANs are mutually isolated and packets can only pass between them via a router.
