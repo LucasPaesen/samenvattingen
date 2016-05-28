@@ -204,7 +204,7 @@ A type of router configuration in which a single physical interface routes traff
 ![stick](img/stick.png)
 
 ```
-interface f0/1.10
+interface g0/0.10
 encapsulation dot1q 10
 end
 ```
