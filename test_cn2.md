@@ -1,6 +1,7 @@
 #Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
 ##Theorie
+###Hoofdstuk 1
 **(ARP) Store-and-forward switching**:  
 Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
 
@@ -43,6 +44,19 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 5. Employing high-speed ports
 5. Taking advantage of their fast internal switching process
 6. Having a low, per-port cost
+
+###Hoofdstuk 2
+**Boot sequence switch:**
+
+1. Power-on self test (POST) -> CPU, DRAM, flash 
+2. Run boot loader software. 
+3. Boot loader performs low-level CPU initialization. 
+4. Boot loader initializes the flash file system 
+5. Boot loader locates and loads a default IOS operating system software image into memory and passes control of the switch over to the IOS.
+6. Attempts to automatically boot by using information in the BOOT environment variable. 
+7.  If this variable is not set, the switch performs a top-to-bottom search through the flash file system. It loads and executes the first executable file, if it can. 
+8.  The IOS software then initializes the interfaces using the Cisco IOS commands found in the configuration file and startup configuration, which is stored in NVRAM. 
+
 
 
 ##Commandos
