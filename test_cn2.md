@@ -198,8 +198,15 @@ site local unicast: FEC0::/10
 **Inter-VLAN routing:**  
 Layer 2 switches cannot forward traffic between VLANs without the assistance of a router. Inter-VLAN routing is a process for forwarding network traffic from one VLAN to another, using a router.
 
+**Router on a stick:**  
+A type of router configuration in which a single physical interface routes traffic between multiple VLANs on a network.
+
+![stick](img/stick.png)
+
 **Multilayer switches:**  
-Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the need for dedicated routers. They support dynamic routing and inter-VLAN routing. 
+Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the need for dedicated routers. They support dynamic routing and inter-VLAN routing.
+
+![multi](img/multi.png)
 
 ###Hoofdstuk 6
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
