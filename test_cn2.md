@@ -160,6 +160,8 @@ Builds a Forwarding Information Base (FIB), and an adjacency table. When a netwo
 **  :**  
 
 ##Commandos
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 ###Initiële configuratie van switch / router
 | Omschrijving | Commando |
 | --- | --- |
