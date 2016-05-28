@@ -1,5 +1,5 @@
 #Samenvatting Computernetwerken 2
-**Overzicht hoofdstukken:**  
+**Overzicht van de hoofdstukken:**  
 [Hoofdstuk 1](#hoofdstuk-1)  
 [Hoofdstuk 2](#hoofdstuk-2)  
 [Hoofdstuk 3](#hoofdstuk-3)  
