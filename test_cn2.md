@@ -54,8 +54,8 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 4. Boot loader initializes the flash file system 
 5. Boot loader locates and loads a default IOS operating system software image into memory and passes control of the switch over to the IOS.
 6. Attempts to automatically boot by using information in the BOOT environment variable. 
-7.  If this variable is not set, the switch performs a top-to-bottom search through the flash file system. It loads and executes the first executable file, if it can. 
-8.  The IOS software then initializes the interfaces using the Cisco IOS commands found in the configuration file and startup configuration, which is stored in NVRAM. 
+7. If this variable is not set, the switch performs a top-to-bottom search through the flash file system. It loads and executes the first executable file, if it can. 
+8. The IOS software then initializes the interfaces using the Cisco IOS commands found in the configuration file and startup configuration, which is stored in NVRAM. 
 
 
 
