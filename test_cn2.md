@@ -199,13 +199,34 @@ is a route that matches all packets. A default static route is simply a static r
  2. The floating static route is only used when the primary route is not available. 
  3. To accomplish this, the floating static route is configured with a higher administrative distance than the primary route. 
 
-
-
-
 ###Afkortingen
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
 [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
+
+####Belangrijkste afkortingen
+| Afkorting | Betekenis |
+| :---: | :---: |
+| CAM | Content addressable memory |
+| CRC | Cyclic redundancy check |
+| FCS | Frame-check-sequence |
+| POST | Power-on self-test |
+| SSH | Secure shell |
+| DoS | Denial-of-Service |
+| DNS | Domain Name Server |
+| NTP | Network time protocol |
+| VLAN | Virtual local area network |
+| DTP | Dynamic trunking protocol |
+| CPU | Central processing unit |
+| RAM | Random access memory |
+| ROM | Read-only memory |
+| OSPF | Open shortest path first |
+| EIGRP | Enhanced interior gateway routing protocol |
+| CIDR | Classless inter-domain routing |
+| VLSM | Variable-length subnet masking |
+| FLSM | Fixed-length subnet masking |
+| IMAP | Internet message access protocol |
+| SMTP | Simple mail transfer protocol |
 
 ##Commandos
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
