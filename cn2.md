@@ -151,7 +151,7 @@ Security, cost reduction, better performance, shrink broadcast domains, improved
 Process of adding a VLAN identification header to the frame.
 
 **VLAN range** *(hoogstwaarschijnlijk examen vraag)*:  
-Normale range: 1-1005 / stored in vlan.dat
+Normale range: 1-1005 / stored in vlan.dat  
 Extended range: 1006 - 4096 / stored in NVRAM
 
 **Removing a VLAN:**  
