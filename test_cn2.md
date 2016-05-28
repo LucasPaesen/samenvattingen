@@ -147,17 +147,20 @@ When a packet arrives on an interface, it is forwarded to the control plane wher
 When a packet arrives on an interface, it is forwarded to the control plane where the CPU searches for a match in the fastswitching cache. If it is not there, it is process-switched and forwarded to the exit interface. The flow information for the packet is also stored in the fastswitching cache. If another packet going to the same destination arrives on an interface, the next-hop information in the cache is reused without CPU intervention. 
 
 **Cisco express forwarding:**  
-Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers. 
+Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers.
+
+
 
 ###Hoofdstuk 5
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
-**  :**  
+
 
 ###Hoofdstuk 6
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
-**  :**  
+###Afkortingen
+[Credit to Lisa Dossche](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
 
 ##Commandos
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
