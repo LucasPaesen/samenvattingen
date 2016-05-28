@@ -259,7 +259,16 @@ is a route that matches all packets. A default static route is simply a static r
 **Show IP route output example** *(hoogstwaarschijnlijk eaxamen vraag)*:  
 ![route](img/route.png)  
 Weten wat elk onderdeel is, zoals de beginletters (O, I, R, etc).  
-[Zie hier voor een korte analyse](https://keepingitclassless.net/2011/07/the-anatomy-of-show-ip-route/)
+
+In volgorde vinden we:
+1. Type route
+2. Netwerk (subnet) van de route die ingesteld staat
+3. [Administrative Distance / Metric]
+4. IP van de next hop router poort
+5. Tijd dat de route bestaat
+6. Poort waaruit gestuurd wordt
+
+[Zie hier voor een iets gedetailleerdere analyse](https://keepingitclassless.net/2011/07/the-anatomy-of-show-ip-route/)
 
 ##Afkortingen
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
