@@ -421,10 +421,10 @@ In het geval van personeel is dit 9. ->  **32-9 = 23 -> /23**
  2. Laatste adres is het broadcast adres -1: **172.16.1.254**
 
 ####Administratie voorbeeld
-1. hosts: Minimaal 20 hosts -> 2^6 = 32 hosts 
+1. hosts: Minimaal 20 hosts -> 2^5 = 32 hosts 
 2. CIDR: 32b – het aantal bits  genomen voor de hosts te bepalen. 
 In het geval van personeel is dit 9. ->  **32-5 = 27 -> /27**
-3. Subnetmask: Opsplitsen volgens CIDR -> 26b & 6b -> 11111111.11111111.11111111.11100000 -> 
+3. Subnetmask: Opsplitsen volgens CIDR -> 27b & 5b -> 11111111.11111111.11111111.11100000 -> 
 **255.255.255.224**
 4. Netwerkadres: Broadcast van vorige subnet + 1.
 **172.16.2.0**
