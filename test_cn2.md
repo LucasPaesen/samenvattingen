@@ -202,7 +202,7 @@ is a route that matches all packets. A default static route is simply a static r
 ###Afkortingen
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
-[**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
+Alle afkortingen: [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
 
 ####Belangrijkste afkortingen
 | Afkorting | Betekenis |
