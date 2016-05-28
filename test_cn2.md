@@ -150,15 +150,31 @@ When a packet arrives on an interface, it is forwarded to the control plane wher
 **Cisco express forwarding:**  
 Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers.
 
-
-
 ###Hoofdstuk 5
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
+**Inter-VLAN routing:**  
+Layer 2 switches cannot forward traffic between VLANs without the assistance of a router. Inter-VLAN routing is a process for forwarding network traffic from one VLAN to another, using a router.
 
+**Multilayer switches:**  
+Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the need for dedicated routers. They support dynamic routing and inter-VLAN routing. 
 
 ###Hoofdstuk 6
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**Voordelen van static routing:**  
+
+2. Static routes are not advertised over the network, resulting in better security.
+3. Static routes use less bandwidth than dynamic routing protocols, no CPU cycles are used to calculate and communicate routes.
+4. The path a static route uses to send data is known.
+
+**Nadelen van static routing:**  
+
+1. Initial configuration and maintenance is time-consuming. 
+2. Configuration is error-prone, especially in large networks. 
+3. Administrator intervention is required to maintain changing route information. 
+4. Does not scale well with growing networks; maintenance becomes cumbersome. 
+5. Requires complete knowledge of the whole network for proper implementation
 
 ###Afkortingen
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
