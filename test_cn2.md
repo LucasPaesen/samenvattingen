@@ -12,6 +12,7 @@
  6. [Hoofdstuk 6](#hoofdstuk-6)
 2. [Afkortingen](#afkortingen)  
 3. [Commandos](#commandos)  
+4. [VLSM](#vlsm-voorbeeld)
 
 ##Theorie
 ###Hoofdstuk 1
@@ -176,6 +177,31 @@ Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the nee
 4. Does not scale well with growing networks; maintenance becomes cumbersome. 
 5. Requires complete knowledge of the whole network for proper implementation
 
+**Wanneer static routes gebruiken?**  
+
+1. Providing ease of routing table maintenance in smaller networks that are not expected to grow significantly.
+2. Routing to and from stub networks. A stub network is a network accessed by a single route, and the router has no other neighbors.
+3. Using a single default route to represent a path to any network that does not have a more specific match with another route in the routing table. Default routes are used to send traffic to any destination beyond the next upstream router.
+
+**Often uses of static routing:**  
+
+1. Connect to a specific network. 
+2. Provide a Gateway of Last Resort for a stub network. 
+3. Reduce the number of routes advertised by summarizing several contiguous networks as one static route. 
+4. Create a backup route in case a primary route link fails
+
+**Default static route:**  
+is a route that matches all packets. A default static route is simply a static route with 0.0.0.0/0 as the destination ipv4 address.
+
+**Floating static route:**  
+
+ 1. Floating static routes are static routes that are used to provide a backup path to a primary static or dynamic route, in the event of a link failure. 
+ 2. The floating static route is only used when the primary route is not available. 
+ 3. To accomplish this, the floating static route is configured with a higher administrative distance than the primary route. 
+
+
+
+
 ###Afkortingen
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
@@ -274,6 +300,8 @@ Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the nee
 `ip route 172.16.0.0 255.248.0.0 s0/0/0`
 
 ##VLSM Voorbeeld
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 ###Opgave
 Een onderneming wenst een hiërarchische IP adressering te implementeren.   
 Gegeven is het aantal hosts per departement (LAN) en enkele seriële verbindingen. Gebruik VLSM om het netwerk efficiënt onder te verdelen in hiërarchische subnetten. Het nulde subnet is hier bruikbaar!  
