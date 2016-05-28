@@ -14,6 +14,8 @@
 3. [Commandos](#commandos)  
 4. [VLSM](#vlsm-voorbeeld)
 
+Zaken zeker naar te kijken: poortnummers, tcp/udp, subnetting, switching technieken, ipv6, bootproces, dhcp en routing technieken & protocollen.
+
 ##Theorie
 ###Hoofdstuk 1
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
