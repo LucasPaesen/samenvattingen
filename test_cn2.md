@@ -23,7 +23,14 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 **Borderless switched network:**  
  A network architecture that allows organizations to connect anyone, anywhere, anytime, and on any device securely, reliably, and seamlessly.
  
+ **Steps of building the MAC address table:**
  
+ 1. The switch receives a frame from PC 1 on Port 1. 
+ 2. The switch examines the source MAC address and compares it to MAC address table. If the address is not in the MAC address table, it associates the source MAC address of PC 1 with the ingress port (Port 1) in the MAC address table. If the MAC address table already has an entry for that source address, it resets the aging timer. An entry for a MAC address is typically kept for five minutes. 
+ 3. After the switch has recorded the source address information, the switch examines the destination MAC address. If the destination address is not in the MAC table or if it’s a broadcast MAC address, as indicated by all Fs, the switch floods the frame to all ports, except the ingress port. 
+ 4. The destination device replies to the frame with a unicast frame addressed to PC 1. 
+ 5. The switch enters the source MAC address of PC 3 and the port number of the ingress port into the address table. The destination address of the frame and its associated egress port is found in the MAC address table . 
+ 6. The switch can now forward frames between these source and destination devices without flooding, because it has entries in the address table that identify the associated ports .
 
 ##Commandos
 ###Initiële configuratie van switch / router
