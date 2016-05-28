@@ -258,7 +258,6 @@ is a route that matches all packets. A default static route is simply a static r
 
 **Show IP route output example** *(hoogstwaarschijnlijk eaxamen vraag)*:  
 ![route](img/route.png)  
-Weten wat elk onderdeel is, zoals de beginletters (O, I, R, etc).  
 
 In volgorde vinden we:  
 
