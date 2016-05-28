@@ -57,7 +57,20 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 7. If this variable is not set, the switch performs a top-to-bottom search through the flash file system. It loads and executes the first executable file, if it can. 
 8. The IOS software then initializes the interfaces using the Cisco IOS commands found in the configuration file and startup configuration, which is stored in NVRAM. 
 
+**SSH Operation:**  
 
+1. Secure Shell (SSH) is a protocol that provides a secure (encrypted), command-line based connection to a remote device. 
+2. SSH is commonly used in UNIX-based systems. 
+3. The Cisco IOS software also supports SSH. 
+4. A version of the IOS software, including cryptographic (encrypted) features and capabilities, is required to enable SSH on Catalyst 2960 switches. 
+5. Because its strong encryption features, SSH should replace Telnet for management connections. 
+6. SSH uses TCP port 22, by default. Telnet uses TCP port 23.
+
+**DHCP spoofing:**  
+A fake DHCP server is placed in the network to issue dhcp addresses to clients.
+
+**DHCP starvation:**
+Is often used before a DHCP spoofing attack to deny service to the legitimate DHCP server.
 
 ##Commandos
 ###Initiële configuratie van switch / router
@@ -72,6 +85,8 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 | Configure an enable password | enable password cisco |
 | Set a password for telnet lines | password cisco |
 | Specify the lines | line vty 0 15 |
+| Set ssh | transport input ssh |
+| Set ssh | login local |
 | Enable password encryption | service password-encryption |
 
 ##Basis configuratie commando's
