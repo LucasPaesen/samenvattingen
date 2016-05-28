@@ -59,6 +59,7 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 
 ###Hoofdstuk 2
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 **Boot sequence switch:**
 
 1. Power-on self test (POST) -> CPU, DRAM, flash 
@@ -101,6 +102,7 @@ Is used to synchronize the clock of computer systems data networks. It can get t
 
 ###Hoofdstuk 3
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 **VLAN's:**  
 1. A vlan is a logical partition of a layer 2 network.
 2. Each vlan is a broadcast domain, usually with its own IP network.
@@ -122,6 +124,8 @@ Extended range: 1006 - 4096 / stored in NVRAM
 Before deleting a VLAN, be sure to first reassign all member ports to a different VLAN.
 
 ###Hoofdstuk 4
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 **Routing:**  
 
 1. Routers use static routes and dynamic routing protocols to learn about remote networks and build their routing tables.
@@ -142,6 +146,16 @@ When a packet arrives on an interface, it is forwarded to the control plane wher
 
 **Cisco express forwarding:**  
 Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers. 
+
+###Hoofdstuk 5
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**  :**  
+
+###Hoofdstuk 6
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
+**  :**  
 
 ##Commandos
 ###Initiële configuratie van switch / router
