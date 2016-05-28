@@ -33,7 +33,6 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 
 **Alleviating network congestion:**  
 
-Switches help alleviating network congestion by: 
 1. Facilitating the segmentation of a LAN into separate collision domains
 2. Providing full-duplex communication between devices
 3. Taking advantage of their high-port density
