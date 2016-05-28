@@ -134,6 +134,11 @@ Before deleting a VLAN, be sure to first reassign all member ports to a differen
 ###Hoofdstuk 4
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
+**Storing:**
+
+1. Electromagnetic interference (EMI) or radio frequency interference (RFI): Storing door radio golven en elektromagnetische apparaten zoals elektrische motoren.
+2. Crosstalk: Storing door nabijgelegen kabels.
+
 **Routing:**  
 
 1. Routers use static routes and dynamic routing protocols to learn about remote networks and build their routing tables.
