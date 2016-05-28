@@ -203,10 +203,17 @@ A type of router configuration in which a single physical interface routes traff
 
 ![stick](img/stick.png)
 
+Router:  
 ```
 interface g0/0.10
 encapsulation dot1q 10
 end
+```
+Switch:  
+```
+interface g0/3
+switchport mode trunk
+switchport trunk allowed vlan 10
 ```
 
 **Multilayer switches:**  
