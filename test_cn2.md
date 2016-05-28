@@ -8,7 +8,7 @@
 [Hoofdstuk 6](#hoofdstuk-6)
 
 **Overzicht:**  
-[Terug naar overzicht](./README.md)
+[Terug naar overzicht samenvattingen](./README.md)
 
 ##Theorie
 ###Hoofdstuk 1
