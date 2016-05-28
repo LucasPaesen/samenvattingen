@@ -8,14 +8,12 @@
 1. Fast-forward switching: Laagste niveau van latentie stuurt onmiddellijk een pakket na het lezen van het bestemmingsadres, typische  ut-through methode voor het switchen. 
 2. Fragment-free switching: De switch slaat de eerste 64 bytes van het frame op voor forwarding, de meeste netwerkfouten en botsingen treden tijdens de eerste 64 bytes op.
 
-**Gelaagd model**:
-![model](https://gyazo.com/d30d7107c1e3545753df4cbfd5866e56)
-
-**TCP/IP Protocol Suite en communicatie**:  
-![tcp/ip](https://gyazo.com/71d1c0eb939f4ed98b36b7bf760ab5e1)
-
-**Encapsulation:**
-![encaps](https://gyazo.com/4a235de5d871efd9d7df133a2993ff99)
+**Gelaagd model**:  
+![model](https://gyazo.com/d30d7107c1e3545753df4cbfd5866e56)  
+**TCP/IP Protocol Suite en communicatie**:   
+![tcp/ip](https://gyazo.com/71d1c0eb939f4ed98b36b7bf760ab5e1)  
+**Encapsulation:**  
+![encaps](https://gyazo.com/4a235de5d871efd9d7df133a2993ff99)  
 
 
 
