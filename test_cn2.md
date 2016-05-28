@@ -10,7 +10,8 @@
  4. [Hoofdstuk 4](#hoofdstuk-4)  
  5. [Hoofdstuk 5](#hoofdstuk-5)  
  6. [Hoofdstuk 6](#hoofdstuk-6)
-2. [Commandos](#commandos)  
+2. [Afkortingen](#afkortingen)  
+3. [Commandos](#commandos)  
 
 ##Theorie
 ###Hoofdstuk 1
@@ -160,6 +161,8 @@ Builds a Forwarding Information Base (FIB), and an adjacency table. When a netwo
 [Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
 
 ###Afkortingen
+[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+
 [Credit to Lisa Dossche](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
 
 ##Commandos
