@@ -9,7 +9,9 @@
 
 1. hosts: Minimaal 20 hosts -> 2^6 = 32 hosts 
 2. CIDR: 32b – het aantal bits  genomen voor de hosts te bepalen. 
+
 zerezgfzeg
+
 1. Test
 2. Test
 
