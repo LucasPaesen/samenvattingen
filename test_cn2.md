@@ -27,7 +27,7 @@ Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde 
 **(ARP) Cut-through**:  
 Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het destination address wordt gelezen.
 
-**Gelaagd model**:  
+**Gelaagd model (APSTNDP)**:  
 
 ![model](img/model.png)  
 
