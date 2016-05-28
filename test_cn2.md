@@ -2,12 +2,14 @@
 [**Terug naar overzicht samenvattingen**](./README.md)
 
 **Overzicht van de hoofdstukken:**  
-[Hoofdstuk 1](#hoofdstuk-1)  
-[Hoofdstuk 2](#hoofdstuk-2)  
-[Hoofdstuk 3](#hoofdstuk-3)  
-[Hoofdstuk 4](#hoofdstuk-4)  
-[Hoofdstuk 5](#hoofdstuk-5)  
-[Hoofdstuk 6](#hoofdstuk-6)
+1. [Theorie](#theorie)  
+ 1. [Hoofdstuk 1](#hoofdstuk-1)  
+ 2. [Hoofdstuk 2](#hoofdstuk-2)  
+ 3. [Hoofdstuk 3](#hoofdstuk-3)  
+ 4. [Hoofdstuk 4](#hoofdstuk-4)  
+ 5. [Hoofdstuk 5](#hoofdstuk-5)  
+ 6. [Hoofdstuk 6](#hoofdstuk-6)
+2. [Commandos](#commandos)  
 
 ##Theorie
 ###Hoofdstuk 1
