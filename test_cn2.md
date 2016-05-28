@@ -1,7 +1,7 @@
 #Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
 
-[Hoofdstuk 1](###Hoofdstuk 1)  
+[Hoofdstuk 1](###Hoofdstuk1)  
 [Hoofdstuk 2](###Hoofdstuk 2)  
 [Hoofdstuk 3](###Hoofdstuk 3)  
 [Hoofdstuk 4](###Hoofdstuk 4)  
@@ -9,7 +9,7 @@
 [Hoofdstuk 6](###Hoofdstuk 6)
 
 ##Theorie
-###Hoofdstuk 1
+###Hoofdstuk1
 **(ARP) Store-and-forward switching**:  
 Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
 
