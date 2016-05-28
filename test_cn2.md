@@ -206,7 +206,7 @@ is a route that matches all packets. A default static route is simply a static r
 
 ####Belangrijkste afkortingen
 | Afkorting | Betekenis |
-| :---: | :---: |
+| :---: | --- |
 | CAM | Content addressable memory |
 | CRC | Cyclic redundancy check |
 | FCS | Frame-check-sequence |
