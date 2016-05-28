@@ -5,7 +5,7 @@
 
 **(ARP) Cut-through**: 
 1. Fast-forward switching: Laagste niveau van latentie stuurt onmiddellijk een pakket na het lezen van het bestemmingsadres, typische  ut-through methode voor het switchen
-2.Fragment-free switching: De switch slaat de eerste 64 bytes van het frame op voor forwarding, de meeste netwerkfouten en botsingen treden tijdens de eerste 64 bytes op.
+3.Fragment-free switching: De switch slaat de eerste 64 bytes van het frame op voor forwarding, de meeste netwerkfouten en botsingen treden tijdens de eerste 64 bytes op.
 
 
 
