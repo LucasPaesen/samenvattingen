@@ -46,6 +46,19 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 **Borderless switched network:**  
  A network architecture that allows organizations to connect anyone, anywhere, anytime, and on any device securely, reliably, and seamlessly.
  
+**Access, Distribution and Core layers:**  
+*Access Layer:*  
+The access layer represents the network edge, where traffic enters or exits the campus network. Traditionally, the primary function of an access layer switch is to provide network access to the user.
+
+*Distribution Layer:*  
+
+1. Providing intelligent switching, routing, and network access policy functions to access the rest of the network
+2. Providing high availability through redundant distribution layer switches to the end-user and equal cost paths to the core
+3. Providing differentiated services to various classes of service applications at the edge of the network 
+
+*Core Layer:*  
+The core layer is the network backbone. It connects several layers of the campus network. The core layer serves as the aggregator for all of the other campus blocks and ties the campus together with the rest of the network. The primary purpose of the core layer is to provide fault isolation and highspeed backbone connectivity. 
+ 
  **Steps of building the MAC address table to forward frames:**
  
  1. The switch receives a frame from PC 1 on Port 1. 
@@ -78,6 +91,15 @@ VoIP, video support, video conferencing, call control, voice messaging, etc. Mul
 6. Attempts to automatically boot by using information in the BOOT environment variable. 
 7. If this variable is not set, the switch performs a top-to-bottom search through the flash file system. It loads and executes the first executable file, if it can. 
 8. The IOS software then initializes the interfaces using the Cisco IOS commands found in the configuration file and startup configuration, which is stored in NVRAM. 
+
+**Recovering from a system crash:**  
+
+1. Connect a PC by console cable to the switch console port. Configure terminal emulation software to connect to the switch. 
+2. Unplug the switch power cord. 
+3. Reconnect the power cord to the switch and, within 15 seconds, press and hold down the Mode button while the System LED is still flashing green. 
+4. Continue pressing the Mode button until the System LED turns briefly amber and then solid green; then release the Mode button. 
+5. The boot loader switch: prompt appears in the terminal emulation software on the PC. 
+The boot loader command line supports commands to format the flash file system, reinstall the operating system software, and recover from a lost or forgotten password. For example, the dir command can be used to view a list of files within a specified directory as shown in the figure. 
 
 **SSH Operation:**  
 
