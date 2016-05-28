@@ -2,6 +2,7 @@
 [**Terug naar overzicht samenvattingen**](./README.md)
 
 **Overzicht van de hoofdstukken:**  
+
 1. [Theorie](#theorie)  
  1. [Hoofdstuk 1](#hoofdstuk-1)  
  2. [Hoofdstuk 2](#hoofdstuk-2)  
