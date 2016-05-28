@@ -256,6 +256,11 @@ is a route that matches all packets. A default static route is simply a static r
  2. The floating static route is only used when the primary route is not available. 
  3. To accomplish this, the floating static route is configured with a higher administrative distance than the primary route. 
 
+**Show IP route output example** *(hoogstwaarschijnlijk eaxamen vraag)*:  
+![route](img/route.png)  
+Weten wat elk onderdeel is, zoals de beginletters (O, I, R, etc).  
+[Zie hier voor een korte analyse](https://keepingitclassless.net/2011/07/the-anatomy-of-show-ip-route/)
+
 ##Afkortingen
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
