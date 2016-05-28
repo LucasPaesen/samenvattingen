@@ -10,8 +10,10 @@
 
 **Gelaagd model**:  
 ![model](img/model.png)  
+
 **TCP/IP Protocol Suite en communicatie**:   
 ![tcp/ip](img/protocol.png)  
+
 **Encapsulation:**  
 ![encaps](img/encaps.png)  
 
