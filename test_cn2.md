@@ -15,7 +15,7 @@
 4. [VLSM](#vlsm-voorbeeld)
 
 **Zaken zeker naar te kijken:**  
-poortnummers, subnetting, switching technieken, ipv6, bootproces, dhcp en routing technieken & protocollen.
+subnetting, switching technieken, ipv6, bootproces, dhcp en routing technieken & protocollen.
 
 ##Theorie
 ###Hoofdstuk 1
