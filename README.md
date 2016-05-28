@@ -1,6 +1,6 @@
 #Samenvattingen
 ##Overzicht
-1. [Computernetwerken II](test_cn2.md)
+1. [Computernetwerken II](cn2.md)
 
 ##Handige links
 1. [Markdown2PDF](https://github.com/segersniels/sublime-markdown-2-pdf)
