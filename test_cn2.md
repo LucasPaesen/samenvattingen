@@ -1,4 +1,6 @@
 #Samenvatting Computernetwerken 2
+[**Terug naar overzicht samenvattingen**](./README.md)
+
 **Overzicht van de hoofdstukken:**  
 [Hoofdstuk 1](#hoofdstuk-1)  
 [Hoofdstuk 2](#hoofdstuk-2)  
@@ -6,8 +8,6 @@
 [Hoofdstuk 4](#hoofdstuk-4)  
 [Hoofdstuk 5](#hoofdstuk-5)  
 [Hoofdstuk 6](#hoofdstuk-6)
-
-[**Terug naar overzicht samenvattingen**](./README.md)
 
 ##Theorie
 ###Hoofdstuk 1
