@@ -110,6 +110,9 @@ The boot loader command line supports commands to format the flash file system, 
 5. Because its strong encryption features, SSH should replace Telnet for management connections. 
 6. SSH uses TCP port 22, by default. Telnet uses TCP port 23.
 
+**MAC address flooding:**  
+An attacker could exploit this behavior to gain access to traffic normally controlled by the switch by using a PC to run a MAC flooding tool. Such tool is a program created to generate and send out frames with bogus source MAC addresses to the switch port. 
+
 **DHCP spoofing:**  
 A fake DHCP server is placed in the network to issue dhcp addresses to clients.
 
