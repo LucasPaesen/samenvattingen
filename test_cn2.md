@@ -2,11 +2,11 @@
 [Terug naar overzicht](./README.md)
 
 [Hoofdstuk 1](#hoofdstuk-1)  
-[Hoofdstuk 2](###Hoofdstuk 2)  
+[Hoofdstuk 2](#hoofdstuk-2)  
 [Hoofdstuk 3](#hoofdstuk-3)  
-[Hoofdstuk 4](###Hoofdstuk 4)  
-[Hoofdstuk 5](###Hoofdstuk 5)  
-[Hoofdstuk 6](###Hoofdstuk 6)
+[Hoofdstuk 4](#hoofdstuk-4)  
+[Hoofdstuk 5](#hoofdstuk-5)  
+[Hoofdstuk 6](#hoofdstuk-6)
 
 ##Theorie
 ###Hoofdstuk 1
