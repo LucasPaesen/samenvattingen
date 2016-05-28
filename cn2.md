@@ -207,7 +207,7 @@ Router:
 ```
 interface g0/0.10
 encapsulation dot1q 10
-ip address 10.17.10.1 255.255.192.0
+ip address 10.17.10.1 255.255.255.240
 end
 ```
 Switch:  
