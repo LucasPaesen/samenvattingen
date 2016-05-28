@@ -2,7 +2,6 @@
 [Terug naar overzicht](./README.md)
 ##Theorie
 **(ARP) Store-and-forward switching**: is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is. 
-
 **(ARP) Cut-through**:
 
 1. Fast-forward switching: Laagste niveau van latentie stuurt onmiddellijk een pakket na het lezen van het bestemmingsadres, typische  ut-through methode voor het switchen. 
@@ -19,7 +18,6 @@
 
 **Converged Network:**  
 VoIP, video support, video conferencing, call control, voice messaging, etc. Multiple types of traffic only one network to manage.
-
 **Borderless switched network:**  
  A network architecture that allows organizations to connect anyone, anywhere, anytime, and on any device securely, reliably, and seamlessly.
  
