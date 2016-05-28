@@ -1,6 +1,7 @@
 #Samenvatting Computernetwerken 2
 [Terug naar overzicht](./README.md)
 
+Links naar hoofdstukken:  
 [Hoofdstuk 1](#hoofdstuk-1)  
 [Hoofdstuk 2](#hoofdstuk-2)  
 [Hoofdstuk 3](#hoofdstuk-3)  
