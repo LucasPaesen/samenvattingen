@@ -247,7 +247,7 @@ is a route that matches all packets. A default static route is simply a static r
  2. The floating static route is only used when the primary route is not available. 
  3. To accomplish this, the floating static route is configured with a higher administrative distance than the primary route. 
 
-###Afkortingen
+##Afkortingen
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 Alle afkortingen: [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
