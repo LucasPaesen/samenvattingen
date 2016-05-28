@@ -73,7 +73,7 @@ A fake DHCP server is placed in the network to issue dhcp addresses to clients.
 Is often used before a DHCP spoofing attack to deny service to the legitimate DHCP server.
 
 **DHCP snooping:**  
-Specifies which switch ports van respond to DHCP requests.
+Specifies which switch ports van respond to DHCP requests. Example:
 ```
 ip dhcp snooping  
 ip dhcp snooping vlan 10,20  
@@ -83,7 +83,51 @@ interface fa0/2
 ip dhcp limit rate 5
 ```
 
+**NTP network time protocol:**  
+Is used to synchronize the clock of computer systems data networks. It can get the correct time from an internal or external time source.
 
+###Hoofdstuk 3
+**VLAN's:**  
+1. A vlan is a logical partition of a layer 2 network.
+2. Each vlan is a broadcast domain, usually with its own IP network.
+3. VLANs are mutually isolated and packets can only pass between them via a router.
+4. Usually the partitioning of a layer 2 network takes place in a switch.
+5. Are based on logical connections.
+
+**Benefits of vlan:**  
+Security, cost reduction, better performance, shrink broadcast domains, improved IT staff efficiency, simpler project and application management.
+
+**Frame tagging:**  
+Process of adding a VLAN identification header to the frame.
+
+**VLAN range:**  
+Normale range: 1-1005 / stored in vlan.dat
+Extended range: 1006 - 4096 / stored in NVRAM
+
+**Removing a VLAN:**  
+Before deleting a VLAN, be sure to first reassign all member ports to a different VLAN.
+
+###Hoofdstuk 4
+**Routing:**  
+
+1. Routers use static routes and dynamic routing protocols to learn about remote networks and build their routing tables.
+2. Routers use routing tables to determine the best path to send packets.
+3. Routers encaptulate the packet and forwards it to the interface indicated in the routing table.
+
+**Packet forwarding methods:**
+
+1. Process switching -> an older packet forwarding mechanism still available for Cisco routers.
+2. Fast switching -> a common packet forwarding mechanism which uses a fast-switching cache to store next hop information.
+3. Cisco express forwarding -> the most recent, fastest and preferred cisco ios packet-forwarding mechanism. Table entries are not packet-triggered like fast switching but change-triggered
+
+**Process switching:**  
+When a packet arrives on an interface, it is forwarded to the control plane where the CPU matches the destination address with an entry in its routing table, and then determines the exit interface and forwards the packet. It is important to understand that the router does this for every packet, even if the destination is the same for a stream of packets.
+
+**Fast switching:**  
+When a packet arrives on an interface, it is forwarded to the control plane where the CPU searches for a match in the fastswitching cache. If it is not there, it is process-switched and forwarded to the exit interface. The flow information for the packet is also stored in the fastswitching cache. If another packet going to the same destination arrives on an interface, the next-hop information in the cache is reused without CPU intervention. 
+
+**Cisco express forwarding:**  
+Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers. 
 
 ##Commandos
 ###Initiële configuratie van switch / router
