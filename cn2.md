@@ -35,7 +35,7 @@ Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het desti
 
 ![tcp/ip](img/protocol.png)  
 
-**Encapsulation:** *(hoogstwaarschijnlijk examen vraag)*  
+**Encapsulation** *(hoogstwaarschijnlijk examen vraag)*:  
 
 ![encaps](img/encaps.png)  
 ![encaps](img/enc.png)  
@@ -68,7 +68,7 @@ The core layer is the network backbone. It connects several layers of the campus
 5. The switch enters the source MAC address of PC 3 and the port number of the ingress port into the address table. The destination address of the frame and its associated egress port is found in the MAC address table . 
 6. The switch can now forward frames between these source and destination devices without flooding, because it has entries in the address table that identify the associated ports .
 
-**Alleviating network congestion:** *(hoogstwaarschijnlijk examen vraag)*  
+**Alleviating network congestion** *(hoogstwaarschijnlijk examen vraag)*:  
 
 1. Facilitating the segmentation of a LAN into separate collision domains
 2. Providing full-duplex communication between devices
@@ -81,7 +81,7 @@ The core layer is the network backbone. It connects several layers of the campus
 ###Hoofdstuk 2
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
-**Boot sequence switch:** *(hoogstwaarschijnlijk examen vraag)*  
+**Boot sequence switch** *(hoogstwaarschijnlijk examen vraag)*:  
 
 1. Power-on self test (POST) -> CPU, DRAM, flash 
 2. Run boot loader software. 
