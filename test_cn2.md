@@ -1,4 +1,4 @@
-#Samenvatting Computernetwerken 2
+#Computernetwerken 2
 [**Terug naar samenvattingen**](./README.md)
 
 **Overzicht van de hoofdstukken:**  
@@ -19,7 +19,7 @@ subnetting, switching technieken, ipv6, bootproces, dhcp en routing technieken &
 
 ##Theorie
 ###Hoofdstuk 1
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 **(ARP) Store-and-forward switching**:  
 Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
@@ -79,7 +79,7 @@ The core layer is the network backbone. It connects several layers of the campus
 6. Having a low, per-port cost
 
 ###Hoofdstuk 2
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 **Boot sequence switch:**
 
@@ -134,7 +134,7 @@ ip dhcp limit rate 5
 Is used to synchronize the clock of computer systems data networks. It can get the correct time from an internal or external time source.
 
 ###Hoofdstuk 3
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 **VLAN's:**  
 
@@ -158,7 +158,7 @@ Extended range: 1006 - 4096 / stored in NVRAM
 Before deleting a VLAN, be sure to first reassign all member ports to a different VLAN.
 
 ###Hoofdstuk 4
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 **Storing:**
 
@@ -193,7 +193,7 @@ link-local unicast: FE80::/10
 site local unicast: FEC0::/10  
 
 ###Hoofdstuk 5
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 **Inter-VLAN routing:**  
 Layer 2 switches cannot forward traffic between VLANs without the assistance of a router. Inter-VLAN routing is a process for forwarding network traffic from one VLAN to another, using a router.
@@ -209,7 +209,7 @@ Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the nee
 ![multi](img/multi.png)
 
 ###Hoofdstuk 6
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 **Voordelen van static routing:**  
 
@@ -248,7 +248,7 @@ is a route that matches all packets. A default static route is simply a static r
  3. To accomplish this, the floating static route is configured with a higher administrative distance than the primary route. 
 
 ###Afkortingen
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 Alle afkortingen: [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
 
@@ -277,7 +277,7 @@ Alle afkortingen: [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/
 | SMTP | Simple mail transfer protocol |
 
 ##Commandos
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 ###Initiële configuratie van switch / router
 | Omschrijving | Commando |
@@ -369,7 +369,7 @@ Alle afkortingen: [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/
 `ip route 172.16.0.0 255.248.0.0 s0/0/0`
 
 ##VLSM Voorbeeld
-[Terug naar hoofdstukken overzicht](#samenvatting-computernetwerken-2)
+[Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
 ###Opgave
 Een onderneming wenst een hiërarchische IP adressering te implementeren.   
