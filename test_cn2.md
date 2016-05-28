@@ -38,6 +38,7 @@ Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het desti
 **Encapsulation:**  
 
 ![encaps](img/encaps.png)  
+![encaps](img/enc.png)  
 
 **Converged Network:**  
 VoIP, video support, video conferencing, call control, voice messaging, etc. Multiple types of traffic only one network to manage.
