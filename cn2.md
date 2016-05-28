@@ -21,21 +21,21 @@ subnetting, switching technieken, ipv6, bootproces, dhcp en routing technieken &
 ###Hoofdstuk 1
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
-**(ARP) Store-and-forward switching**:  
+**(examen vraag) Store-and-forward switching**:  
 Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
 
-**(ARP) Cut-through**:  
+**(examen vraag) Cut-through**:  
 Verstuurt de volledige frame voordat deze volledig ontvangen is. Enkel het destination address wordt gelezen.
 
-**Gelaagd model (APSTNDP)**:  
+**(examen vraag) Gelaagd model (APSTNDP)**:  
 
 ![model](img/model.png)  
 
-**TCP/IP Protocol Suite en communicatie**:   
+**(examen vraag) TCP/IP Protocol Suite en communicatie**:   
 
 ![tcp/ip](img/protocol.png)  
 
-**Encapsulation:**  
+**(examen vraag) Encapsulation:**  
 
 ![encaps](img/encaps.png)  
 ![encaps](img/enc.png)  
@@ -59,16 +59,16 @@ The access layer represents the network edge, where traffic enters or exits the 
 *Core Layer:*  
 The core layer is the network backbone. It connects several layers of the campus network. The core layer serves as the aggregator for all of the other campus blocks and ties the campus together with the rest of the network. The primary purpose of the core layer is to provide fault isolation and highspeed backbone connectivity. 
  
- **Steps of building the MAC address table to forward frames:**
+**Steps of building the MAC address table to forward frames:**
  
- 1. The switch receives a frame from PC 1 on Port 1. 
- 2. The switch examines the source MAC address and compares it to MAC address table. If the address is not in the MAC address table, it associates the source MAC address of PC 1 with the ingress port (Port 1) in the MAC address table. If the MAC address table already has an entry for that source address, it resets the aging timer. An entry for a MAC address is typically kept for five minutes. 
- 3. After the switch has recorded the source address information, the switch examines the destination MAC address. If the destination address is not in the MAC table or if it’s a broadcast MAC address, as indicated by all Fs, the switch floods the frame to all ports, except the ingress port. 
- 4. The destination device replies to the frame with a unicast frame addressed to PC 1. 
- 5. The switch enters the source MAC address of PC 3 and the port number of the ingress port into the address table. The destination address of the frame and its associated egress port is found in the MAC address table . 
- 6. The switch can now forward frames between these source and destination devices without flooding, because it has entries in the address table that identify the associated ports .
+1. The switch receives a frame from PC 1 on Port 1. 
+2. The switch examines the source MAC address and compares it to MAC address table. If the address is not in the MAC address table, it associates the source MAC address of PC 1 with the ingress port (Port 1) in the MAC address table. If the MAC address table already has an entry for that source address, it resets the aging timer. An entry for a MAC address is typically kept for five minutes. 
+3. After the switch has recorded the source address information, the switch examines the destination MAC address. If the destination address is not in the MAC table or if it’s a broadcast MAC address, as indicated by all Fs, the switch floods the frame to all ports, except the ingress port. 
+4. The destination device replies to the frame with a unicast frame addressed to PC 1. 
+5. The switch enters the source MAC address of PC 3 and the port number of the ingress port into the address table. The destination address of the frame and its associated egress port is found in the MAC address table . 
+6. The switch can now forward frames between these source and destination devices without flooding, because it has entries in the address table that identify the associated ports .
 
-**Alleviating network congestion:**  
+**(examen vraag) Alleviating network congestion:**  
 
 1. Facilitating the segmentation of a LAN into separate collision domains
 2. Providing full-duplex communication between devices
@@ -81,7 +81,7 @@ The core layer is the network backbone. It connects several layers of the campus
 ###Hoofdstuk 2
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
-**Boot sequence switch:**
+**(examen vraag) Boot sequence switch:**
 
 1. Power-on self test (POST) -> CPU, DRAM, flash 
 2. Run boot loader software. 
@@ -110,13 +110,13 @@ The boot loader command line supports commands to format the flash file system, 
 5. Because its strong encryption features, SSH should replace Telnet for management connections. 
 6. SSH uses TCP port 22, by default. Telnet uses TCP port 23.
 
-**MAC address flooding:**  
+**(examen vraag) MAC address flooding:**  
 An attacker could exploit this behavior to gain access to traffic normally controlled by the switch by using a PC to run a MAC flooding tool. Such tool is a program created to generate and send out frames with bogus source MAC addresses to the switch port. 
 
-**DHCP spoofing:**  
+**(examen vraag) DHCP spoofing:**  
 A fake DHCP server is placed in the network to issue dhcp addresses to clients.
 
-**DHCP starvation:**  
+**(examen vraag) DHCP starvation:**  
 Is often used before a DHCP spoofing attack to deny service to the legitimate DHCP server.
 
 **DHCP snooping:**  
@@ -150,7 +150,7 @@ Security, cost reduction, better performance, shrink broadcast domains, improved
 **Frame tagging:**  
 Process of adding a VLAN identification header to the frame.
 
-**VLAN range:**  
+**(examen vraag) VLAN range:**  
 Normale range: 1-1005 / stored in vlan.dat
 Extended range: 1006 - 4096 / stored in NVRAM
 
@@ -159,11 +159,6 @@ Before deleting a VLAN, be sure to first reassign all member ports to a differen
 
 ###Hoofdstuk 4
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
-
-**Storing:**
-
-1. Electromagnetic interference (EMI) or radio frequency interference (RFI): Storing door radio golven en elektromagnetische apparaten zoals elektrische motoren.
-2. Crosstalk: Storing door nabijgelegen kabels.
 
 **Routing:**  
 
@@ -186,7 +181,7 @@ When a packet arrives on an interface, it is forwarded to the control plane wher
 **Cisco express forwarding:**  
 Builds a Forwarding Information Base (FIB), and an adjacency table. When a network has converged, the FIB and adjacency tables contain all the information a router would have to consider when forwarding a packet. The FIB contains precomputed reverse lookups, next hop information for routes including the interface and Layer 2 information. Cisco Express Forwarding is the fastest forwarding mechanism and the preferred choice on Cisco routers.
 
-**IPV6:**  
+**(examen vraag) IPV6:**  
 link-local: 2001:0DB8:ACAD:0001:/64  
 multicast: FF00::/8  
 link-local unicast: FE80::/10  
@@ -198,7 +193,7 @@ site local unicast: FEC0::/10
 **Inter-VLAN routing:**  
 Layer 2 switches cannot forward traffic between VLANs without the assistance of a router. Inter-VLAN routing is a process for forwarding network traffic from one VLAN to another, using a router.
 
-**Router on a stick:**  
+**(examen vraag) Router on a stick:**  
 A type of router configuration in which a single physical interface routes traffic between multiple VLANs on a network.
 
 ![stick](img/stick.png)
@@ -217,7 +212,7 @@ switchport mode trunk
 switchport trunk allowed vlan 10
 ```
 
-**Multilayer switches:**  
+**(examen vraag) Multilayer switches:**  
 Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the need for dedicated routers. They support dynamic routing and inter-VLAN routing.
 
 ![multi](img/multi.png)
@@ -225,13 +220,13 @@ Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the nee
 ###Hoofdstuk 6
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
-**Voordelen van static routing:**  
+**(examen vraag) Voordelen van static routing:**  
 
 2. Static routes are not advertised over the network, resulting in better security.
 3. Static routes use less bandwidth than dynamic routing protocols, no CPU cycles are used to calculate and communicate routes.
 4. The path a static route uses to send data is known.
 
-**Nadelen van static routing:**  
+**(examen vraag) Nadelen van static routing:**  
 
 1. Initial configuration and maintenance is time-consuming. 
 2. Configuration is error-prone, especially in large networks. 
@@ -239,7 +234,7 @@ Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the nee
 4. Does not scale well with growing networks; maintenance becomes cumbersome. 
 5. Requires complete knowledge of the whole network for proper implementation
 
-**Wanneer static routes gebruiken?**  
+**(examen vraag) Wanneer static routes gebruiken?**  
 
 1. Providing ease of routing table maintenance in smaller networks that are not expected to grow significantly.
 2. Routing to and from stub networks. A stub network is a network accessed by a single route, and the router has no other neighbors.
@@ -252,7 +247,7 @@ Multilayer switches can perform Layer 2 and Layer 3 functions, replacing the nee
 3. Reduce the number of routes advertised by summarizing several contiguous networks as one static route. 
 4. Create a backup route in case a primary route link fails
 
-**Default static route:**  
+**(examen vraag) Default static route:**  
 is a route that matches all packets. A default static route is simply a static route with 0.0.0.0/0 as the destination ipv4 address.
 
 **Floating static route:**  
@@ -266,7 +261,7 @@ is a route that matches all packets. A default static route is simply a static r
 
 Alle afkortingen: [**Credit to Lisa Dossche**](https://lookaside.fbsbx.com/file/Afkortingen%20Netwerken%202.pdf?token=AWxoObw3ioW3CR525437Ols0U50zqyOz7E_ACN3VchI3TV42KWF_Spi8SPISfqzFPOKKn3rB_uJbCmbAKMXyCbHBP6vOGhak1ncdNvxqKaPl_d_N6V1lse69euTTNpmzH5yNQhZdACCFCXQg_1DBcgC8hQjva1r5xowe2RFRhj5GxQ)
 
-####Belangrijkste afkortingen
+####(examen vraag) Belangrijkste afkortingen
 | Afkorting | Betekenis |
 | :---: | --- |
 | CAM | Content addressable memory |
