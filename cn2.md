@@ -21,6 +21,9 @@ subnetting, switching technieken, ipv6, bootproces, dhcp en routing technieken &
 ###Hoofdstuk 1
 [Terug naar hoofdstukken overzicht](#computernetwerken-2)
 
+**DHCP handshake:**  
+DORA -> Discover, Offer, Request, Acknowledge
+
 **Store-and-forward switching** *(hoogstwaarschijnlijk examen vraag)*:  
 Krijgt het volledige frame en voert een CRC check uit. Als de CRC check in orde is zoekt de switch naar het destination address en stuurt de frame uit de benodigde poort. Is nodig voor Quality of Service (QoS) analyse van geconvergeerde netwerken waar frame classificatie voor de prioriteit van het verkeer  nodig is.
 
